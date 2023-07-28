@@ -1,0 +1,52 @@
+
+p{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: chocolate;
+}
+
+h1 {
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+    font-size: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2 {
+    font-style: italic;
+    color: dimgray;
+    text-align: center;
+    margin: auto;
+    font-size: 60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#backImg {
+
+    margin-top: 30px;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    background-color: lightsalmon;
+}
+
+#menu{
+    text-align: center;
+    margin-top: 70px;
+    height: 400px;
+    background-color: brown;
+}
+
+.menuButton{
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 100px 30px;
+    width: 170px;
+    height: 100px;
+}
