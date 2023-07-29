@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="style-pages.css">
+  <title>REED</title>
+  <script type="text/javascript" src="modules/lodash.min.js"></script>
+  <script type="text/javascript" src="modules/test_boilerplate.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <h1>REED</h1>
+  <h2>Random viceroy</h2>
+  <div id="startButtonBlock">
+    <button id="startButton">START</button>
+  </div>
+  <div id="Box">
+
+  </div>
+  <!-- <img src="https://cdn.dribbble.com/users/1281272/screenshots/4515441/unicorn.gif"> -->
+  <!-- <img src="image/Tiger2.jpeg" id="backImg"> -->
+
+  <h2></h2>
+  <h3></h3>
+</body>
+
+</html>
