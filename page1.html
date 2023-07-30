@@ -7,25 +7,54 @@
   <meta name="theme-color" content="#000000">
   <link rel="stylesheet" href="style-pages.css">
   <title>REED</title>
-  <script type="text/javascript" src="modules/lodash.min.js"></script>
-  <script type="text/javascript" src="modules/test_boilerplate.js"></script>
-  <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
   <h1>REED</h1>
+  <button class="backButton" onclick="location.href='https://toranosuke-kakizono.github.io'">Home</button>
   <h2>Random viceroy</h2>
-  <div id="startButtonBlock">
-    <button id="startButton">START</button>
+  <div id="SettingButtonBox">
+    <button id="SettingButton">Setting</button>
   </div>
-  <div id="Box">
-
+  <div id="ViceroyBox">
+    <div id="CloseButtonBox">
+      <button id="Close">✖</button>
+    </div>
+    <p class="itemClass">
+      <p class="itemName">Level:</p>
+      <select class="viceroyDropdown">
+        <option value="basic">すべて</option>
+        <option value="basic">基礎演習</option>
+        <option value="basic">中級演習</option>
+        <option value="basic">応用演習</option>
+        <option value="basic">ナイトメア演習😈</option>
+        <option value="basic">読み物📖</option>
+        <option value="basic">その他</option>
+      </select>
+    </p>
+    <p class="itemClass">
+      <p class="itemName">Range:</p>
+      <select class="viceroyDropdown">
+        <option value="basic">すべて</option>
+        <option value="basic">アセスメント1まで</option>
+        <option value="basic">アセスメント2まで</option>
+        <option value="basic">アセスメント3まで</option>
+      </select>
+    </p>
+  </div>
+  <p id="Buttonblock"></p>
+  <div id="StartButtonBox">
+    <button id="StartButton">Start!</button>
   </div>
   <!-- <img src="https://cdn.dribbble.com/users/1281272/screenshots/4515441/unicorn.gif"> -->
   <!-- <img src="image/Tiger2.jpeg" id="backImg"> -->
-
+  
   <h2></h2>
   <h3></h3>
+  <script type="text/javascript" src="modules/lodash.min.js"></script>
+  <script type="text/javascript" src="modules/test_boilerplate.js"></script>
+  <script type="text/javascript" src="allExercise.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
