@@ -1,0 +1,104 @@
+h1 {
+    font-style: italic;
+    margin: auto;
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.backButton {
+    width: 70px;
+    height: 30px;
+    margin-right: auto;
+    display: block;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+
+#SettingButtonBox ,#StartButtonBox{
+    /* startButtonをセンターにするため */
+    text-align: center;
+}
+
+#Buttonblock {
+    height: 20px;
+}
+
+#StartButton {
+    margin-top: 30px;
+    background-color: rgb(245, 197, 77);
+}
+
+
+.menubutton, #SettingButton ,#StartButton{
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    /* マウスカーソル変化 */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+  }
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 0px 30px;
+}
+
+body {
+    background-color: lightsalmon;
+}
+
+#ViceroyBox{
+    text-align: left;
+    margin: 20px auto 0px;
+    height: 400px;
+    width: 70%;
+    background-color: cornsilk;
+    border: solid;
+    border-width: 2px;
+    border-color: #212529;
+    display: none;
+    padding: 10px 0px 0px 50px;
+}
+
+#CloseButtonBox{
+    text-align: right;
+}
+
+#Close{
+    margin-right: 10px;
+    background-color: darkorange;
+    border-radius: 3px;
+}
+
+
+.viceroyDropdown {
+    font-size: 18px;
+    width: 40%;
+    height: 10%;
+    display: inline;
+}
+
+.itemName {
+    width: 80px;
+    margin-right: 10px;
+    font-size: 20px;
+    display:inline-block;
+}
