@@ -5,14 +5,35 @@
 //HTML + CSS 2023-07-14 (day8)
 //プレゼン説明 2023-07-19 (day10)
 
-//TDD（テスト駆動開発）
-function test(actual, expected) {
-    if (JSON.stringify(actual) === JSON.stringify(expected)) {
-      console.log("OK! Test PASSED.");
-    } else {
-      console.error("Test FAILED. Try again!");
-      console.log("    actual: ", actual);
-      console.log("  expected: ", expected);
-      console.trace();
-    }
-  }
+
+
+
+const ViceroyBox = document.getElementById("ViceroyBox");
+
+//ViceroyBoxを表示する
+function displayOn() {
+  ViceroyBox.style.display = 'block';
+  console.log("OK!");
+}
+//ViceroyBoxを表示するアクション
+const SettingButton = document.getElementById("SettingButton");
+SettingButton.addEventListener('click', displayOn);
+
+
+//ViceroyBoxを非表示にする関数
+function displayNone() {
+  ViceroyBox.style.display = 'none'
+}
+//ViceroyBoxを非表示にするアクション
+const CloseButton = document.getElementById("CloseButtonBox");
+CloseButton.addEventListener('click',displayNone);
+
+
+//ランダムを生成する関数（10なら0~9のナンバー）
+function randamIndex() {
+  let random = Math.floor(Math.random() * 10);
+  console.log(random);
+}
+//ランダムを生成するアクション
+const StartButton = document.getElementById("StartButton");
+StartButton.addEventListener('click', randamIndex);
