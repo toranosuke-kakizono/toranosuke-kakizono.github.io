@@ -41,6 +41,31 @@ StartButton.addEventListener('click', randamIndex);
 
 
 
-function arrayFilterByDifficulty(Difficulty) {
-  allExercise.filter(obj => obj.name === Difficulty)
+
+
+/**
+ * @param {string} levelDropdown
+ * @param {string} rangeDropdown
+ * @returns {Array<any>} levelで選択された難易度と、Rangeで選択された範囲で絞り込まれた配列を返す
+*/
+
+//なぜか入ってくれない↓
+let filteredArray;
+
+function arrayFilter() {
+  // console.log(levelDropdownSelectedValue.value);
+  // console.log(rangeDropdownSelectedValue.value);  
+  filteredArray = allExercise
+  .filter(obj => obj.name === levelDropdownSelectedValue.value)
+  .filter(obj => obj.assessment == rangeDropdownSelectedValue.value);
 }
+
+
+
+
+
+const levelDropdownSelectedValue = document.getElementById('levelDoropdown');
+const rangeDropdownSelectedValue = document.getElementById('rangeDoropdown');
+
+
+StartButton.addEventListener('click', arrayFilter);
