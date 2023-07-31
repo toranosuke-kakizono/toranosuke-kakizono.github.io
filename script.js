@@ -37,3 +37,10 @@ function randamIndex() {
 //ランダムを生成するアクション
 const StartButton = document.getElementById("StartButton");
 StartButton.addEventListener('click', randamIndex);
+
+
+
+
+function arrayFilterByDifficulty(Difficulty) {
+  allExercise.filter(obj => obj.name === Difficulty)
+}
