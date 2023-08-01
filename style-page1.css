@@ -102,6 +102,15 @@ body {
     display:inline-block;
 }
 
+#rangeDoropdown {
+    margin-bottom: 30px;
+}
+
+#total {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /* ---------------------------------------------------------------------------------- */
 #exercisesBox{
     text-align:center;
@@ -111,8 +120,12 @@ body {
     border: solid;
     border-width: 2px;
     border-color: #212529;
-    display: block;
+    display: none;
     padding: 10px;
+}
+
+#titleOfExer {
+    font-size: 40px;
 }
 
 #dayNoAndDateOfBlock {
@@ -123,10 +136,6 @@ body {
     font-weight: bold;
     font-size: large;
     margin-right: 10px;
-}
-
-#subtitleOfExer {
-    display: block;
 }
 
 #difficultyAndNumOfBlock{
@@ -144,7 +153,6 @@ body {
 
 #commentOfExer {
     margin: 25px;
-    display: block;
 }
 
 /* --------------------------------------------------------------------------------- */
