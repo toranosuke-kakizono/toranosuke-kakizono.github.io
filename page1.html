@@ -17,9 +17,9 @@
   <div id="SettingButtonBox">
     <button id="SettingButton">Setting</button>
   </div>
-  <div id="ViceroyBox">
-    <div id="CloseButtonBox">
-      <button id="Close">✖</button>
+  <div id="settingBox">
+    <div class="CloseButtonBox">
+      <button class="Close" id="CloseSttingBox">✖</button>
     </div>
     <p class="itemClass">
       <p class="itemName">Level:</p>
@@ -28,7 +28,7 @@
         <option value="基礎演習">基礎演習</option>
         <option value="中級演習">中級演習</option>
         <option value="応用演習">応用演習</option>
-        <option value="ナイトメア演習😈">ナイトメア演習😈</option>
+        <option value="ナイトメア問題 😈">ナイトメア問題 😈</option>
         <option value="読み物📖">読み物📖</option>
         <option value="その他">その他</option>
       </select>
@@ -47,15 +47,30 @@
   <div id="StartButtonBox">
     <button id="StartButton">Start!</button>
   </div>
-  <!-- <img src="https://cdn.dribbble.com/users/1281272/screenshots/4515441/unicorn.gif"> -->
-  <!-- <img src="image/Tiger2.jpeg" id="backImg"> -->
-  
-  <h2></h2>
-  <h3></h3>
+
+  <div id="exercisesBox">
+    <div class="CloseButtonBox">
+      <button class="Close" id="CloseExercisesBox">✖</button>
+    </div>
+    <div id="dayNoAndDateOfBlock">
+      <i id="dayNoOfExer">day-80</i>
+      <i id="dateOfExer">(2023/07/28)</i>
+    </div>
+    <h1 id="titleOfExer">高階関数入門</h1>
+    <h3 id="subtitleOfExer">～サブタイトル～</h3>
+    <hr color="green">
+    <div id="difficultyAndNumOfBlock">
+      <em id="difficultyOfExer">中級演習</em>
+      <em id="numOfExer">（５問）</em>
+    </div>
+    <Button id="JunpToViceroyButton">Junp to Viceroy!</Button>
+    <p id="commentOfExer">ここにコメントが入るよーーーん！！！こんにちは！！！こんばんみ！！</p>
+  </div>
+
   <script type="text/javascript" src="modules/lodash.min.js"></script>
   <script type="text/javascript" src="modules/test_boilerplate.js"></script>
-  <script type="text/javascript" src="allExercise.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="allExercises.js"></script>
+  <script type="text/javascript" src="REED.js"></script>
 </body>
 
 </html>
