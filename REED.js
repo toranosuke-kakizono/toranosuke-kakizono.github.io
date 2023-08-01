@@ -16,6 +16,8 @@ let filteredArray = allExercises;
 const levelSelected = document.getElementById('levelDoropdown');
 const rangeSelected = document.getElementById('rangeDoropdown');
 
+//DOMからフィルターされた演習の合計要素を取得する
+const filteredExerTotal = document.getElementById('filteredExerTotal');
 
 //allExercisesに入っている配列にフィルターをかける関数（※rangeでアセスメントを比較する際は"string"と"number"のため、「 == 」で比較する事）
 function arrayFilter() {
@@ -38,6 +40,7 @@ function arrayFilter() {
     filter(obj => obj.assessment == rangeSelected.value);
   }
   console.log(filteredArray);
+  filteredExerTotal.innerText = filteredArray.length;
 }
 
 //levelセレクタにイベントを設定。セレクタが変更されたら実行する。
@@ -64,7 +67,7 @@ function displayOn() {
 const SettingButton = document.getElementById("SettingButton");
 //セッティングボタンにマウスイベントを設定
 SettingButton.addEventListener('click', displayOn);
-
+SettingButton.addEventListener('click', arrayFilter);
 
 //settingBoxを非表示にする関数
 function displayNone() {
@@ -93,25 +96,55 @@ StartButton.addEventListener('click', randamIndex);
 
 //---------------------------------------------------------------------------------------------
 //変数randomに代入されているインデックスでfilteredArrayのobjにアクセスして、HTML要素を変更する
-// function () {
-  
-// }
 
-// const 
+//DOMから各IDでHTML要素を取得
+const exercisesBox = document.getElementById('exercisesBox');
+const dayNoOfExer = document.getElementById('dayNoOfExer');
+const dateOfExer = document.getElementById('dateOfExer');
+const titleOfExer = document.getElementById('titleOfExer');
+const subtitleOfExer = document.getElementById('subtitleOfExer');
+const difficultyOfExer = document.getElementById('difficultyOfExer');
+const numOfExer = document.getElementById('numOfExer');
+const commentOfExer = document.getElementById('commentOfExer');
+const CloseExercisesBox = document.getElementById('CloseExercisesBox');
 
-// <div id="dayNoAndDateOfBlock">
-// <i id="dayNoOfExer">day-80</i>
-// <i id="dateOfExer">(2023/07/28)</i>
-// </div>
-// <h1 id="titleOfExer">高階関数入門</h1>
-// <h3 id="subtitleOfExer">～サブタイトル～</h3>
-// <hr color="green">
-// <div id="difficultyAndNumOfBlock">
-// <em id="difficultyOfExer">中級演習</em>
-// <em id="numOfExer">（５問）</em>
-// </div>
-// <Button id="JunpToViceroyButton">Junp to Viceroy!</Button>
-// <p id="commentOfExer">ここにコメントが入るよーーーん！！！こんにちは！！！こんばんみ！！</p>
+//ランダム変数でobjを取得する
+let selectObj;
+
+function changeTheExerText() {
+  selectObj = filteredArray[random];
+  dayNoOfExer.innerText = selectObj.dayNo;
+  dateOfExer.innerText = `(${selectObj.date})`;
+  titleOfExer.innerText = selectObj.title;
+  subtitleOfExer.innerText = selectObj.subTitle;
+  difficultyOfExer.innerText = selectObj.difficulty;
+  numOfExer.innerText = `(${selectObj.Num})`;
+  commentOfExer.innerText = selectObj.comment;
+};
+
+//マウスイベントを設定
+StartButton.addEventListener('click', changeTheExerText);
+
+
+//演習ボックスを開く
+StartButton.addEventListener('click', () => exercisesBox.style.display = 'block');
+//スタートボタンの文字を変更する
+StartButton.addEventListener('click', () => StartButton.innerText = 'Shuffle!');
+//スタートボタンの背景色を変更する
+StartButton.addEventListener('click', () => StartButton.style.backgroundColor = 'rgb(99, 26, 216)');
+//演習ボックスを閉じる
+CloseExercisesBox.addEventListener('click', () => exercisesBox.style.display = 'none');
+//スタートボタンの文字を戻す
+CloseExercisesBox.addEventListener('click', () => StartButton.innerText = 'Start!');
+//スタートボタンの背景色を戻す
+CloseExercisesBox.addEventListener('click', () => StartButton.style.backgroundColor = 'rgb(42, 163, 89)');
+
+//DOMからViceroyジャンプボタン要素を取得する
+const JunpToViceroyButton = document.getElementById('JunpToViceroyButton');
+//クリック時に新規タブで開く
+JunpToViceroyButton.addEventListener('click', () => window.open(selectObj.URL,  '_blank', 'noreferrer'));
+
+
 
 
 // // //データベースチェッカー(level)
