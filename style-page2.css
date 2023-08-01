@@ -1,0 +1,28 @@
+h1 {
+    font-style: italic;
+    margin: auto;
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 0px 30px;
+}
+
+.backButton {
+    width: 70px;
+    height: 30px;
+    margin-right: auto;
+    display: block;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+
+body {
+    background-color: rgb(198, 241, 248);
+}
