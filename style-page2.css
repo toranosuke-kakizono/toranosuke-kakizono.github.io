@@ -1,28 +1,44 @@
-h1 {
-    font-style: italic;
-    margin: auto;
-    font-size: 40px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="ja">
 
-h2 {
-    font-size: 50px;
-    text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0px 0px 30px;
-}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="style-page2.css">
+  <link rel="icon" href="favicon.ico">
+  <title>REED</title>
+</head>
 
-.backButton {
-    width: 70px;
-    height: 30px;
-    margin-right: auto;
-    display: block;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black;
-    color: whitesmoke;
-    border-radius: 20px;
-}
+<body>
+  <h1>REED</h1>
+  <button class="backButton" onclick="location.href='https://toranosuke-kakizono.github.io'">Home</button>
+  <!-- <h2>Visualization👀</h2>
+  <h3>折角データベースを作ったので…色々な角度から覗いてみよう！</h3> -->
 
-body {
-    background-color: rgb(198, 241, 248);
-}
+  <h2 id="h2-1">プログラミング…<br>毎日復習しないと忘れちゃう…</h2>
+    <ul>
+        <li>「中級だけに絞って復習したい！」</li>
+        <li>「アセスメント2が苦手だったから…その範囲を復習したい！」</li>
+        <li>「復習したいけど…自分で課題を選ぶのが面倒くさい…😫」</li>
+    </ul>
+  <h1 id="h1-1">その悩み・・・すべて<b> REED  <b>で解決します！</h1>
+  <h3></h3>
+  <
+
+  <!-- <p class="exerNumClass">
+    <button id="exerNumButton">演習の数→</button>
+    <span id="exerNum"></span>
+  </p>
+  <p class="allQuestionsClass">
+    <button id="allQuestionsButton">問題の数→</button>
+    <span id="allQuestions"></span>
+  </p> -->
+
+  <!-- <script type="text/javascript" src="modules/lodash.min.js"></script>
+  <script type="text/javascript" src="modules/test_boilerplate.js"></script> -->
+  <script type="text/javascript" src="allExercises.js"></script>
+  <script type="text/javascript" src="Visualization.js"></script>
+</body>
+
+</html>
